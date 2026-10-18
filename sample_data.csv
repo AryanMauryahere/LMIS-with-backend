@@ -1,0 +1,61 @@
+state,district,sector,trade,month,postings,completions,entry_rate
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-01,66,38,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-02,71,38,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-03,73,37,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-04,74,36,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-05,79,37,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-06,85,38,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-07,92,39,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-08,91,39,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-09,88,38,0.62
+Maharashtra,Nashik,Renewable energy,Solar PV Technician,2026-10,93,38,0.62
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-01,32,22,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-02,33,21,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-03,34,21,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-04,36,21,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-05,40,22,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-06,41,23,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-07,41,23,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-08,41,22,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-09,42,22,0.6
+Maharashtra,Nashik,Renewable energy,Wind Turbine Technician,2026-10,45,22,0.6
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-01,76,92,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-02,76,91,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-03,81,93,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-04,86,96,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-05,87,99,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-06,91,99,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-07,99,97,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-08,92,95,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-09,89,96,0.66
+Maharashtra,Nashik,IT & ITeS,Data Analyst,2026-10,101,99,0.66
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-01,60,70,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-02,61,71,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-03,68,74,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-04,67,76,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-05,72,76,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-06,78,74,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-07,77,73,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-08,79,74,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-09,75,76,0.65
+Maharashtra,Nashik,IT & ITeS,Cloud Support Associate,2026-10,81,79,0.65
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-01,83,84,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-02,87,87,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-03,92,89,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-04,92,89,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-05,100,88,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-06,101,86,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-07,109,87,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-08,100,90,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-09,103,93,0.75
+Maharashtra,Nashik,Manufacturing,CNC Operator,2026-10,105,94,0.75
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-01,53,68,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-02,57,70,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-03,57,70,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-04,62,69,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-05,61,68,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-06,67,68,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-07,66,71,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-08,66,73,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-09,64,74,0.71
+Maharashtra,Nashik,Manufacturing,Quality Control Technician,2026-10,67,72,0.71
