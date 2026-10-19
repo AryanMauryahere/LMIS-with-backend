@@ -15,10 +15,16 @@ class ForecastPoint(BaseModel):
     lower: int
     upper: int
 
+class HistoryPoint(BaseModel):
+    month: str
+    demand: int
+    supply: int
+
 class ForecastResponse(BaseModel):
     model: str
     confidence: float
     points: list[ForecastPoint]
+    history: list[HistoryPoint]
     synthetic: bool = True
 
 class ScenarioRequest(BaseModel):
@@ -36,7 +42,11 @@ class ScenarioResponse(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
-    role: str = "policy_analyst"
+    role: str
+    name: str = ""
+
+class DemoLoginRequest(BaseModel):
+    role: Literal["planner", "officer", "analyst"]
 
 class SkillMatchRequest(BaseModel):
     query: str = Field(min_length=2, max_length=240)

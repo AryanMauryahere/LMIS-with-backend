@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/KaryaDrishti_Logo.png" alt="KaryaDrishti logo" height="110">
+<img src="KaryaDrishti_Logo.png" alt="KaryaDrishti logo" height="110">
 
 # KaryaDrishti
 
@@ -56,8 +56,8 @@ Access is enforced on the server with OAuth2 and JWT role checks, not only hidde
 
 ```
 karyadrishti/
-├── backend/            FastAPI app: auth, API routes, forecasting, mapping, seed data, tests
-├── frontend/           React + TypeScript + Tailwind single-page app
+├── api/            FastAPI app: auth, API routes, forecasting, mapping, seed data, tests
+├── client/           React + TypeScript + Tailwind single-page app
 ├── docker-compose.yml  db (pgvector) + backend + frontend
 ├── .github/workflows/  CI: tests, frontend build, Docker image publish
 └── .env.example        settings template
@@ -99,6 +99,7 @@ Public View needs no login.
 |---|---|
 | `JWT_SECRET` | Key used to sign login tokens. Set a long random value before sharing the app. |
 | `DEMO_PASSWORD` | Password for the seeded demo accounts |
+| `DEMO_MODE` | `1` enables one-click demo-role login; set `0` before any real deployment |
 | `CORS_ORIGINS` | Allowed browser origins for the API |
 
 Never commit your real `.env` file.
@@ -110,12 +111,12 @@ Never commit your real `.env` file.
 docker compose up db
 
 # backend
-cd backend
+cd api
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 
 # frontend (in another terminal)
-cd frontend
+cd client
 npm install
 npm run dev        # http://localhost:5173, proxies /api to :8000
 ```
@@ -128,16 +129,13 @@ Base path: `/api/v1`
 
 | Method | Route | Access |
 |---|---|---|
-| POST | `/auth/token` | Login, returns a JWT |
-| GET | `/meta` | Filters and data status |
-| GET | `/gaps` | Forecasts and gaps by occupation |
-| POST | `/scenario` | Seat what-if calculation |
-| GET | `/brief` | Policy brief (Planner) |
-| POST | `/imports` | CSV upload and validation (Data Officer) |
-| GET | `/mapping` | Review queue (Skill Analyst) |
-| POST | `/mapping/suggest` | Match a raw job title |
-| POST | `/mapping/{id}/approve` | Approve a mapping |
-| GET | `/public/gaps` | Read-only summary, no auth |
+| POST | `/auth/token` | Email + password login (OAuth2 form), returns a JWT |
+| POST | `/auth/demo` | One-click demo role login (disabled when `DEMO_MODE=0`) |
+| GET | `/me` | Current user |
+| POST | `/forecasts` | Demand/supply forecast (any staff role) |
+| POST | `/scenarios` | Seat what-if (Planner, Analyst) |
+| POST | `/skills/match` | Match a job title to skills (Planner, Analyst) |
+| GET | `/public/forecast` | Read-only forecast, no login |
 
 Full interactive documentation is available at `/docs` when the API is running.
 
@@ -152,11 +150,16 @@ Required columns: `state, district, sector, trade, month, postings, completions,
 ## Testing
 
 ```bash
-cd backend && pytest -q
-cd frontend && npm run build
+cd api && python -m compileall -q app
+cd client && npm run build
 ```
 
 Both run automatically in GitHub Actions on every push and pull request.
+
+## Implemented vs planned
+
+Implemented: login with roles, forecasts (Holt/ARIMA with a real 3-month backtest), seat scenarios, skill matching, public view.
+Not implemented yet (described above as the design): PostgreSQL storage of observations, CSV import and validation log, mapping review queue, policy brief, pgvector matching. `api/db/init.sql` is ready but the API does not read from it yet.
 
 ## Limitations
 

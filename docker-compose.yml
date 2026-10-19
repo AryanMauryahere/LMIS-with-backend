@@ -21,6 +21,8 @@ services:
     environment:
       DATABASE_URL: "postgresql+psycopg://kd:${POSTGRES_PASSWORD:-kd_dev_only}@db:5432/karyadrishti"
       JWT_SECRET: "${JWT_SECRET:-replace-this-secret}"
+      DEMO_PASSWORD: "${DEMO_PASSWORD:-karya2026}"
+      CORS_ORIGINS: "http://localhost:3000,http://localhost:5173"
     ports:
       - "8000:8000"
     depends_on:
@@ -30,7 +32,7 @@ services:
   client:
     build: ./client
     ports:
-      - "8080:80"
+      - "3000:80"
     depends_on:
       - api
 
