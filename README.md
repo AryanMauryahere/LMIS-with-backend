@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="frontend/public/KaryaDrishti_Logo.png" alt="KaryaDrishti logo" height="110">
+<img src="/KaryaDrishti_Logo.png" alt="KaryaDrishti logo" height="110">
 
 # KaryaDrishti
 
