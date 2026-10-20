@@ -11,7 +11,9 @@ Forecast district-level job demand against qualified training supply, spot short
 *Smart India Hackathon 2026 · PS 26246 · Maharashtra pilot (Pune and Nagpur)*
 
 </div>
-
+Live demo: https://lmis-with-backend.vercel.app
+API docs: https://lmis-with-backend.onrender.com/docs
+Data: synthetic demonstration data only.
 ---
 
 ## The problem
